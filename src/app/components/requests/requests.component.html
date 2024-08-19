@@ -1,7 +1,5 @@
 <div class="requests">
-    <ul class="requests-list">
-        @for (item of requestsList; track $index) {
-            <li>{{ item.name }}</li>
-        }
-    </ul>
+    <app-requests-list
+        [requestsList]="(requestsList | async)!"
+    />
 </div>

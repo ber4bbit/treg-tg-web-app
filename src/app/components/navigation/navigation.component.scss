@@ -1,0 +1,16 @@
+.list {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 12px;
+    flex-wrap: wrap;
+
+    &__item {
+        text-decoration: none;
+        color: #002dcb;
+        font-weight: 500;
+        border: 1px dashed #002dcb;
+        width: max-content;
+        padding: 6px 12px;
+        border-radius: 15px;
+    }
+}

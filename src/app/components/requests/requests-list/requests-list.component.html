@@ -1,0 +1,15 @@
+<div class="fader fader_top"></div>
+<ul class="requests">
+    @for (item of requestsList; track $index) {
+        <li class="requests-item">
+            <span class="requests-item__name">{{ item.name }}</span>
+            @if (item.phone) {
+                <a class="requests-item__info" href="tel:{{ item.phone }}">{{ item.phone }}</a>
+            }
+            @if (item.email) {
+                <a class="requests-item__info" href="mailto:{{ item.email }}">{{ item.email }}</a>
+            }
+        </li>
+    }
+</ul>
+<div class="fader fader_bottom"></div>

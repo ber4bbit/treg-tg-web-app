@@ -1,0 +1,5 @@
+<nav class="list">
+    @for (item of navLinks; track $index) {
+        <a class="list__item" [routerLink]="item.route">{{ item.text }}</a>
+    }
+</nav>
